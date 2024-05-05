@@ -1,12 +1,12 @@
 public class BmiService {
 
-    public int calculate(int weight) {
+    public int calculate(int weight, double height) {
 
-        double height = 1.87;
+        //double height = 1.87;
 
-        int IML = (int) (weight / (height * height));
+        double bmi = weight / Math.pow(height, 2);
 
-        return  IML;
+        return (int) bmi;
 
     }
 
